@@ -1,5 +1,5 @@
 describe('replaceVowel', function(){
   it('take a vowel and replace with a hyphon', function(){
-    expect(replaceVowel('cat')).to.equal('c-t');
+    expect(replaceVowel('banana apple')).to.equal('b-n-n- -ppl-');
   });
 });

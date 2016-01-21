@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title></title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-1.12.0.js"></script>
-
-    </script>
+    <script src="js/scripts.js"></script>
+    <title>Word Puzzle</title>
   </head>
-  <body>
-
-  </body>
+    <body>
+      <h2>Word Puzzle Game</h2>
+      <h4>Instructions:
+          player 1 adds a phrase, player 2 trys to decode phrase. Good luck!
+      </h4>
+      <div class="container">
+        <form id="phraseInput" role="form">
+    <div class="form-group">
+      <label  for="inputBox">Enter Phrase HERE:</label>
+      <input id="inputBox" type="text" class="form-control" placeholder="Example. 'The quick brown fox jumped over the lazy dog.'">
+    </div>
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+      </div>
+      <div class="output">
+      <h3>  Decode This, Player 2!:<span id="puzzlePhrase"></span>
+      </h3>
+    </div>
+    </body>
 </html>
